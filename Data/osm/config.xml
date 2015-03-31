@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config lane_width="3.5" road_remove_threshold="0" node_culling_threshold="3.0" >
+    <highway type="motorway" speed="65" lanes="5"/>
+   <highway type="trunk" speed="50" lanes="2"/>
+    <highway type="primary" speed="50" lanes="2"/>
+     <highway type="secondary" speed="40" lanes="1"/>
+   <!--<highway type="tertiary" speed="25" lanes="1"/>
+    <highway type="unclassified" speed="25" lanes="1"/>
+    <highway type="residential" speed="25" lanes="1"/>
+
+     <highway type="motorway_link" speed="30" lanes="1"/>
+    <highway type="trunk_link" speed="30" lanes="1"/>
+    <highway type="primary_link" speed="30" lanes="1"/>
+-->
+</config>

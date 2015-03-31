@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network name="test" version="1.3" gamma="0.500000" lane_width="3.500000" center_x="-10809782.807855" center_y="3596706.219808">
+  <roads>
+    <road id="124952152" name="124952152">
+      <arc_line_rep>
+        <points>1290.807861 -2717.469727 0.000000 0.0
+262.807861 -1043.219849 0.000000 0.0
+-327.192139 52.280193 0.000000 0.0
+-638.192139 707.280212 0.000000 0.0
+-1612.192139 2590.280273 0.000000 0.0
+-2251.192139 4179.780273 0.000000 0.0
+-2513.192139 4761.780273 0.000000 0.0
+-2817.192139 5574.030273 0.000000 0.0
+-2867.192139 5677.280273 0.000000 0.0
+-3105.192139 6077.780273 0.000000 0.0
+-3171.493164 6213.306641 0.000000 0.0
+-3586.192139 7423.780273 0.000000 0.0
+-3617.561035 7564.335938 0.000000 0.0
+-3627.192139 7655.030273 0.000000 0.0
+-3632.192139 7765.780273 0.000000 0.0
+-3618.192139 8491.030273 0.000000 0.0
+-3625.192139 8578.530273 0.000000 0.0
+-3646.192139 8691.280273 0.000000 0.0
+</points>
+        <radii>3999.999756
+4000.000000
+4000.000000
+4000.000000
+4000.000000
+3999.999756
+1287.721802
+1287.721680
+2273.302490
+935.716736
+1537.627075
+1035.753784
+1061.432739
+2440.939697
+862.186096
+862.185974
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="31774379" name="31774379">
+      <arc_line_rep>
+        <points>-1305.192139 1644.030151 0.000000 0.0
+-1255.192139 1651.280151 0.000000 0.0
+-1241.192139 1652.280151 0.000000 0.0
+-1221.341064 1650.625732 0.000000 0.0
+-1204.192139 1644.030151 0.000000 0.0
+-1186.061768 1634.552856 0.000000 0.0
+-1170.192139 1617.030151 0.000000 0.0
+-1158.192139 1600.030151 0.000000 0.0
+-1042.192139 1412.530151 0.000000 0.0
+-947.052673 1226.999146 0.000000 0.0
+</points>
+        <radii>175.522888
+98.911583
+85.791512
+106.569885
+76.801582
+163.649094
+358.565216
+3999.999756
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="31774429" name="31774429">
+      <arc_line_rep>
+        <points>-1577.548218 2449.049561 0.000000 0.0
+-1378.192139 2065.280273 0.000000 0.0
+-1323.372925 1930.150635 0.000000 0.0
+-1314.192139 1892.280151 0.000000 0.0
+-1309.384399 1850.812988 0.000000 0.0
+-1319.799561 1724.675049 0.000000 0.0
+-1317.662598 1696.895386 0.000000 0.0
+-1308.192139 1668.780151 0.000000 0.0
+-1300.793213 1658.051758 0.000000 0.0
+-1283.853638 1654.421997 0.000000 0.0
+-1268.192139 1656.530151 0.000000 0.0
+</points>
+        <radii>2730.168701
+240.980057
+345.227295
+169.206284
+191.537903
+91.966644
+38.492851
+19.216995
+52.310806
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="31774550" name="31774550">
+      <arc_line_rep>
+        <points>-1204.192139 1691.280151 0.000000 0.0
+-1262.586670 1684.669434 0.000000 0.0
+-1282.490967 1690.550293 0.000000 0.0
+-1293.192139 1702.780151 0.000000 0.0
+-1299.192139 1712.280151 0.000000 0.0
+-1303.745117 1728.974365 0.000000 0.0
+-1299.192139 1744.530151 0.000000 0.0
+-1293.497559 1758.411011 0.000000 0.0
+-1270.488403 1772.530029 0.000000 0.0
+-1255.192139 1772.530151 0.000000 0.0
+-1238.018188 1769.310059 0.000000 0.0
+-1224.192139 1756.780151 0.000000 0.0
+-1217.192139 1747.780151 0.000000 0.0
+-1175.192139 1671.780151 0.000000 0.0
+-1160.192139 1647.530151 0.000000 0.0
+-1130.832275 1583.207764 0.000000 0.0
+-1123.954712 1569.877441 0.000000 0.0
+</points>
+        <radii>49.970016
+34.146610
+66.066971
+40.689682
+39.674942
+65.252060
+35.497200
+38.219414
+48.469654
+45.602726
+66.346352
+71.972656
+325.842651
+325.842651
+623.453125
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="31774566" name="31774566">
+      <arc_line_rep>
+        <points>-1127.192139 1703.030151 0.000000 0.0
+-1079.192139 1710.030151 0.000000 0.0
+-1068.192139 1710.280151 0.000000 0.0
+-1049.257812 1705.976807 0.000000 0.0
+-1037.192139 1692.780151 0.000000 0.0
+-1031.192139 1683.530151 0.000000 0.0
+-1026.250977 1669.118408 0.000000 0.0
+-1029.192139 1654.780151 0.000000 0.0
+-1033.192139 1645.030151 0.000000 0.0
+-1040.192139 1636.030151 0.000000 0.0
+-1052.962769 1625.033203 0.000000 0.0
+-1072.192139 1623.030151 0.000000 0.0
+-1089.752197 1625.956787 0.000000 0.0
+-1108.663574 1642.241577 0.000000 0.0
+-1150.192139 1716.780151 0.000000 0.0
+-1164.192139 1739.780151 0.000000 0.0
+-1200.174927 1816.598022 0.000000 0.0
+-1207.066406 1829.921143 0.000000 0.0
+</points>
+        <radii>88.865463
+45.029530
+44.237373
+48.731453
+38.572666
+38.432125
+44.288059
+46.711369
+48.905651
+38.228203
+48.185104
+40.317780
+69.376053
+365.559570
+365.559570
+763.388489
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="31774579" name="31774579">
+      <arc_line_rep>
+        <points>-907.183716 1250.167236 0.000000 0.0
+-948.192139 1329.530151 0.000000 0.0
+-1002.192139 1459.030151 0.000000 0.0
+-1014.786926 1497.601807 0.000000 0.0
+-1020.683533 1558.410034 0.000000 0.0
+-1012.192139 1655.530151 0.000000 0.0
+-1012.192261 1691.422974 0.000000 0.0
+-1023.192139 1726.780151 0.000000 0.0
+-1026.192139 1730.030151 0.000000 0.0
+-1029.192139 1734.280151 0.000000 0.0
+-1040.192139 1739.780029 0.000000 0.0
+-1056.192139 1740.780151 0.000000 0.0
+</points>
+        <radii>2181.100830
+543.820007
+172.515457
+228.405899
+477.121429
+99.200012
+15.194586
+15.194591
+16.739410
+35.843021
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="31774638" name="31774638">
+      <arc_line_rep>
+        <points>-883.192139 1797.530151 0.000000 0.0
+-989.192139 1768.280151 0.000000 0.0
+-1002.192139 1766.280151 0.000000 0.0
+-1019.858826 1766.280273 0.000000 0.0
+-1039.192139 1773.530151 0.000000 0.0
+-1051.192139 1779.780151 0.000000 0.0
+-1193.192139 1868.280151 0.000000 0.0
+-1207.192139 1880.280151 0.000000 0.0
+-1222.192139 1894.030151 0.177732 0.0
+-1235.192139 1908.280151 0.369995 0.0
+-1261.192139 1940.280151 0.781582 0.0
+-1273.192139 1958.530151 1.000000 0.0
+-1382.382324 2168.854736 0.000000 0.0
+</points>
+        <radii>135.207809
+68.805626
+68.408791
+135.629623
+136.972855
+198.231552
+198.231506
+263.142487
+263.142487
+213.500916
+213.500916
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="45473435" name="45473435">
+      <arc_line_rep>
+        <points>-3669.192139 8691.780273 0.000000 0.0
+-3657.192139 8633.280273 0.000000 0.0
+-3640.668701 8535.791016 0.000000 0.0
+-3653.192139 7764.030273 0.000000 0.0
+-3652.192139 7711.780273 0.000000 0.0
+-3648.192139 7652.780273 0.000000 0.0
+-3634.192139 7536.030273 0.000000 0.0
+-3622.192139 7478.780273 0.000000 0.0
+-3606.192139 7418.530273 0.000000 0.0
+-3219.192139 6280.530273 0.000000 0.0
+-3197.192139 6222.030273 0.000000 0.0
+-3152.192139 6121.030273 0.000000 0.0
+-3096.192139 6016.530273 0.000000 0.0
+-2888.192139 5668.530273 0.000000 0.0
+-2837.192139 5566.030273 0.000000 0.0
+-2533.192139 4753.780273 0.000000 0.0
+-2234.192139 4082.280273 0.000000 0.0
+-1661.192139 2647.280273 0.000000 0.0
+-1605.192139 2525.530273 0.000000 0.0
+-589.192139 556.280212 0.000000 0.0
+-348.192139 43.530193 0.000000 0.0
+242.807861 -1053.469849 0.000000 0.0
+1162.807861 -2553.469727 0.000000 0.0
+</points>
+        <radii>1610.633667
+770.718384
+1334.983032
+1180.006592
+1180.006714
+833.877075
+833.876892
+1179.447144
+1368.178467
+1368.178345
+1919.492188
+2079.679199
+1266.947754
+1266.947632
+4000.000000
+4000.000244
+2779.608154
+2779.608643
+3999.999756
+4000.000000
+4000.000000
+</radii>
+      </arc_line_rep>
+    </road>
+    <road id="7853785" name="7853785">
+      <arc_line_rep>
+        <points>667.661133 -1766.248779 0.000000 0.0
+718.807861 -1847.219849 0.000000 0.0
+798.807861 -2009.719849 0.000000 0.0
+814.807861 -2039.719849 0.000000 0.0
+856.807861 -2111.719727 0.000000 0.0
+861.807861 -2120.969727 0.000000 0.0
+865.807861 -2131.969727 0.000000 0.0
+867.254028 -2149.685547 0.000000 0.0
+855.807861 -2165.219727 0.000000 0.0
+842.215759 -2177.679199 0.000000 0.0
+814.807861 -2184.219727 0.000000 0.0
+</points>
+        <radii>1806.967285
+963.068176
+963.068298
+246.403046
+88.510086
+38.652378
+33.594467
+69.105515
+44.715073
+</radii>
+      </arc_line_rep>
+    </road>
+  </roads>
+  <lanes>
+    <lane id="124952152_0" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.000000" interval_end="1.000000" lane_position="-7.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_1" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency/>
+            </base>
+            <divider value="0.356820">
+              <lane_adjacency lane_ref="124952152_0.356820_0.361600_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.361600">
+              <lane_adjacency/>
+            </divider>
+            <divider value="0.413600">
+              <lane_adjacency lane_ref="124952152_0.413600_0.418380_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.418380">
+              <lane_adjacency/>
+            </divider>
+            <divider value="0.444000">
+              <lane_adjacency lane_ref="124952152_0.444000_0.448780_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.448780">
+              <lane_adjacency/>
+            </divider>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_0.356820_0.361600_-10.500000" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="31774579_0"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.356820" interval_end="0.361600" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_0" interval_start="0.356820" interval_end="0.361600"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_0.413600_0.418380_-10.500000" speedlimit="29.057600">
+      <start>
+        <lane_ref ref="31774566_0"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.413600" interval_end="0.418380" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_0" interval_start="0.413600" interval_end="0.418380"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_0.444000_0.448780_-10.500000" speedlimit="29.057600">
+      <start>
+        <lane_ref ref="31774638_0"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.444000" interval_end="0.448780" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_0" interval_start="0.444000" interval_end="0.448780"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_1" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.000000" interval_end="1.000000" lane_position="-3.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_2" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_0" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_2" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_3" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_1" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_3" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.000000" interval_end="1.000000" lane_position="3.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_4" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_2" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="124952152_4" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="124952152" interval_start="0.000000" interval_end="1.000000" lane_position="7.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="124952152_3" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="31774379_0" speedlimit="13.411200">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="45473435_0.649600_0.654452_-10.500000"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="31774379" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="31774429_0" speedlimit="13.411200">
+      <start>
+        <lane_ref ref="45473435_0.533548_0.538400_-10.500000"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="31774429" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="31774550_0" speedlimit="13.411200">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="45473435_0.618400_0.623252_-10.500000"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="31774550" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="31774566_0" speedlimit="13.411200">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="124952152_0.413600_0.418380_-10.500000"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="31774566" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="31774579_0" speedlimit="13.411200">
+      <start>
+        <lane_ref ref="124952152_0.356820_0.361600_-10.500000"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="31774579" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="31774638_0" speedlimit="13.411200">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="124952152_0.444000_0.448780_-10.500000"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="31774638" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_0" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.000000" interval_end="1.000000" lane_position="-7.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_1" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency/>
+            </base>
+            <divider value="0.533548">
+              <lane_adjacency lane_ref="45473435_0.533548_0.538400_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.538400">
+              <lane_adjacency/>
+            </divider>
+            <divider value="0.618400">
+              <lane_adjacency lane_ref="45473435_0.618400_0.623252_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.623252">
+              <lane_adjacency/>
+            </divider>
+            <divider value="0.649600">
+              <lane_adjacency lane_ref="45473435_0.649600_0.654452_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.654452">
+              <lane_adjacency/>
+            </divider>
+            <divider value="0.919948">
+              <lane_adjacency lane_ref="45473435_0.919948_0.924800_-10.500000" interval_start="0.000000" interval_end="1.000000"/>
+            </divider>
+            <divider value="0.924800">
+              <lane_adjacency/>
+            </divider>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_0.533548_0.538400_-10.500000" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="31774429_0"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.533548" interval_end="0.538400" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_0" interval_start="0.533548" interval_end="0.538400"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_0.618400_0.623252_-10.500000" speedlimit="29.057600">
+      <start>
+        <lane_ref ref="31774550_0"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.618400" interval_end="0.623252" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_0" interval_start="0.618400" interval_end="0.623252"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_0.649600_0.654452_-10.500000" speedlimit="29.057600">
+      <start>
+        <lane_ref ref="31774379_0"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.649600" interval_end="0.654452" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_0" interval_start="0.649600" interval_end="0.654452"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_0.919948_0.924800_-10.500000" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <lane_ref ref="7853785_0"/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.919948" interval_end="0.924800" lane_position="-10.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_0" interval_start="0.919948" interval_end="0.924800"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_1" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.000000" interval_end="1.000000" lane_position="-3.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_2" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_0" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_2" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_3" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_1" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_3" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.000000" interval_end="1.000000" lane_position="3.500000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_4" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_2" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="45473435_4" speedlimit="29.057600">
+      <start>
+        <dead_end/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="45473435" interval_start="0.000000" interval_end="1.000000" lane_position="7.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval>
+            <base>
+              <lane_adjacency lane_ref="45473435_3" interval_start="0.000000" interval_end="1.000000"/>
+            </base>
+          </interval>
+        </right>
+      </adjacency_intervals>
+    </lane>
+    <lane id="7853785_0" speedlimit="13.411200">
+      <start>
+        <lane_ref ref="45473435_0.919948_0.924800_-10.500000"/>
+      </start>
+      <end>
+        <dead_end/>
+      </end>
+      <road_intervals>
+        <interval>
+          <base>
+            <road_membership parent_road_ref="7853785" interval_start="0.000000" interval_end="1.000000" lane_position="0.000000"/>
+          </base>
+        </interval>
+      </road_intervals>
+      <adjacency_intervals>
+        <left>
+          <interval/>
+        </left>
+        <right>
+          <interval/>
+        </right>
+      </adjacency_intervals>
+    </lane>
+  </lanes>
+  <intersections/>
+</network>

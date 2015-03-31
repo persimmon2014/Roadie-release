@@ -1,0 +1,80 @@
+cmake_minimum_required(VERSION 2.8)
+project(Tools)
+
+# Turns on cairo option in the code.
+add_definitions(-DHAVE_CAIRO)
+
+# Source for making executables.
+add_executable(view-network view-network.cpp)
+add_executable(export-obj export-obj.cpp)
+add_executable(import-osm import-osm.cpp)
+add_executable(micro micro.cpp)
+
+# Adds project main code as an include directory.
+include_directories(../Roadie/include/)
+
+# Other library includes
+include_directories(/usr/include/glibmm-2.4/)
+include_directories(/usr/lib/x86_64-linux-gnu/glibmm-2.4/include/)
+include_directories(/usr/include/glib-2.0/)
+include_directories(/usr/lib/x86_64-linux-gnu/glib-2.0/include/)
+include_directories(/usr/include/libxml++-2.6/)
+include_directories(/usr/lib/libxml++-2.6/include/)
+#include_directories(/usr/include/cairo/)
+
+find_package(Cairo REQUIRED)
+if(NOT CAIRO_FOUND)
+message(FATAL_ERROR "Package Cairo not found")
+endif(NOT CAIRO_FOUND)
+include_directories(${CAIRO_INCLUDE_DIRS})
+
+find_package(LibXML++ REQUIRED)
+if(NOT LibXML++_FOUND)
+message(FATAL_ERROR "Package LibXML++ not found")
+endif(NOT LibXML++_FOUND)
+include_directories(${LibXML++_INCLUDE_DIRS})
+
+# And links
+set(EXTERNAL_LIBS
+
+  /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so
+  /usr/lib/libxml++-2.6.so
+  #/usr/lib/x86_64-linux-gnu/libcairo.so
+  /usr/lib/libproj.so
+  #/usr/lib/nvidia-331/libGL.so
+  /usr/lib/x86_64-linux-gnu/mesa/libGL.so
+  /usr/lib/x86_64-linux-gnu/libGLEW.so
+  /usr/lib/x86_64-linux-gnu/libGLU.so
+  /usr/lib/x86_64-linux-gnu/libfltk.so
+  /usr/lib/x86_64-linux-gnu/libfltk_gl.so
+/home/weizi/testbed/Roadie/lib/libRoadie.so
+
+  #${FLTK_LIBRARIES}
+  #${LibXML++_LIBRARIES}
+)
+
+target_link_libraries(view-network ${EXTERNAL_LIBS})
+target_link_libraries(export-obj ${EXTERNAL_LIBS})
+target_link_libraries(import-osm ${EXTERNAL_LIBS})
+target_link_libraries(micro ${EXTERNAL_LIBS})
+
+# Turns on the debugging information.
+# TODO This should have an option to turn off.
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -ggdb")
+
+# This turns on the C++11 options.
+# TODO This should be set globally.
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang" OR CMAKE_COMPILER_IS_GNUCXX)
+    include(CheckCXXCompilerFlag)
+    check_cxx_compiler_flag(--std=c++11 SUPPORTS_STD_CXX11)
+    check_cxx_compiler_flag(--std=c++0x SUPPORTS_STD_CXX01)
+    if(SUPPORTS_STD_CXX11)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
+        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --std=c++11")
+    elseif(SUPPORTS_STD_CXX01)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++0x")
+        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --std=c++0x")
+    else()
+        message(ERROR "Compiler does not support --std=c++11 or --std=c++0x.")
+    endif()
+endif()
