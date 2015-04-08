@@ -47,6 +47,12 @@ message(FATAL_ERROR "Package LibXML++ not found")
 endif(NOT LibXML++_FOUND)
 include_directories(${LibXML++_INCLUDE_DIRS})
 
+find_package(PROJ4 REQUIRED)
+if(NOT PROJ4_FOUND)
+message(FATAL_ERROR "Package PROJ4 not found")
+endif(NOT PROJ4_FOUND)
+include_directories(${PROJ4_INCLUDE_DIR})
+
 # Specify header files
 set(ROADIE_HEADERS
   include/arc_road.hpp
@@ -63,7 +69,7 @@ set(ROADIE_HEADERS
   include/polyline_road.hpp
   include/road_rep.hpp
   include/rtree.hpp
-  include/rtree-impl.hpp
+  include/rtree_impl.hpp
   include/sumo_network.hpp
   include/svg_helper.hpp
   include/xml_util.hpp
@@ -113,18 +119,8 @@ set(EXTERNAL_LIBS
   ${GLEW_LIBRARIES}
   ${CAIRO_LIBRARIES}
   ${LibXML++_LIBRARIES}
+  ${PROJ4_LIBRARIES}
 )
-
-# Turn on proj.4 option in the code
-if(TRUE)
-add_definitions(-DHAVE_PROJ4)
-find_package(PROJ4 REQUIRED)
-if(NOT PROJ4_FOUND)
-message(FATAL_ERROR "Package PROJ4 not found")
-endif(NOT PROJ4_FOUND)
-include_directories(${PROJ4_INCLUDE_DIR})
-set(EXTERNAL_LIBS ${EXTERNAL_LIBS} ${PROJ4_LIBRARIES})
-endif(TRUE)
 
 # Link target to external libraries
 target_link_libraries(Roadie ${EXTERNAL_LIBS})

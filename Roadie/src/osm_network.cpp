@@ -1,3 +1,58 @@
+/*
+ * osm_network.cpp
+ * Road Network Library
+ *
+ * Copyright (c) 2010-2016 University of North Carolina at Chapel Hill.
+ * All rights reserved.
+ *
+ * Permission to use, copy, modify, and distribute this software and its
+ * documentation for educational, research, and non-profit purposes, without
+ * fee, and without a written agreement is hereby granted, provided that the
+ * above copyright notice, this paragraph, and the following four paragraphs
+ * appear in all copies.
+ *
+ * Permission to incorporate this software into commercial products may be
+ * obtained by contacting the Office of Technology Development at the University
+ * of North Carolina at Chapel Hill <otd@unc.edu>.
+ *
+ * This software program and documentation are copyrighted by the University of
+ * North Carolina at Chapel Hill. The software program and documentation are
+ * supplied "as is," without any accompanying services from the University of
+ * North Carolina at Chapel Hill or the authors. The University of North
+ * Carolina at Chapel Hill and the authors do not warrant that the operation of
+ * the program will be uninterrupted or error-free. The end-user understands
+ * that the program was developed for research purposes and is advised not to
+ * rely exclusively on the program for any reason.
+ *
+ * IN NO EVENT SHALL THE UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL OR THE
+ * AUTHORS BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+ * CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS
+ * SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE UNIVERSITY OF NORTH CAROLINA AT
+ * CHAPEL HILL OR THE AUTHORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH
+ * DAMAGE.
+ *
+ * THE UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL AND THE AUTHORS SPECIFICALLY
+ * DISCLAIM ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE AND ANY
+ * STATUTORY WARRANTY OF NON-INFRINGEMENT. THE SOFTWARE PROVIDED HEREUNDER IS ON
+ * AN "AS IS" BASIS, AND THE UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL AND THE
+ * AUTHORS HAVE NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
+ * ENHANCEMENTS, OR MODIFICATIONS.
+ *
+ * Please send all bug reports to <geom@cs.unc.edu>.
+ *
+ * The authors may be contacted via:
+ *
+ * David Wilkie, Jason Sewall, Weizi Li, Ming C. Lin
+ * Dept. of Computer Science
+ * 201 S. Columbia St.
+ * Frederick P. Brooks, Jr. Computer Science Bldg.
+ * Chapel Hill, N.C. 27599-3175
+ * United States of America
+ *
+ * <http://gamma.cs.unc.edu/RoadLib/>
+ */
+
 #include "osm_network.hpp"
 #include "arc_road.hpp"
 #include <vector>
@@ -6,10 +61,7 @@
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
-
-#ifdef HAVE_PROJ4
 #include <proj_api.h>
-#endif
 
 static const float  MIPH_TO_MEPS = 1609.344/(60.0*60.0);
 
@@ -1450,24 +1502,24 @@ void network::create_intersections()
 
 
 
-////  code from http://wiki.openstreetmap.org/wiki/Mercator#C_implementation
-double merc_x (double lon) {
-        return 6378137.0 * lon * (M_PI/180.0); // degree to radian
-}
- 
-double merc_y (double lat) {
-        double ratio = 6356752.3142 / 6378137.0;  // (R_MINOR/R_MAJOR)
-        double eccent = sqrt(1.0 - (ratio * ratio));
-        double com = 0.5 * eccent;
-  
-        lat = fmin (89.5, fmax (lat, -89.5));
-        double phi = lat * (M_PI/180.0);
-        double sinphi = sin(phi);
-        double con = eccent * sinphi;
-        con = pow((1.0 - con) / (1.0 + con), com);
-        double ts = tan(0.5 * (M_PI * 0.5 - phi)) / con;
-        return 0 - 6378137.0 * log(ts);
-}
+// ////  code from http://wiki.openstreetmap.org/wiki/Mercator#C_implementation
+// double merc_x (double lon) {
+//         return 6378137.0 * lon * (M_PI/180.0); // degree to radian
+// }
+//  
+// double merc_y (double lat) {
+//         double ratio = 6356752.3142 / 6378137.0;  // (R_MINOR/R_MAJOR)
+//         double eccent = sqrt(1.0 - (ratio * ratio));
+//         double com = 0.5 * eccent;
+//   
+//         lat = fmin (89.5, fmax (lat, -89.5));
+//         double phi = lat * (M_PI/180.0);
+//         double sinphi = sin(phi);
+//         double con = eccent * sinphi;
+//         con = pow((1.0 - con) / (1.0 + con), com);
+//         double ts = tan(0.5 * (M_PI * 0.5 - phi)) / con;
+//         return 0 - 6378137.0 * log(ts);
+// }
 
 void network::scale_and_translate()
 {
@@ -1482,7 +1534,7 @@ void network::scale_and_translate()
    // double survey_foot_to_meter = 1200.0/3937.0; //s. feet/meters
    double deg_to_rad = M_PI / 180.0;
 
-#ifdef HAVE_PROJ4
+
    projPJ pj_merc, pj_latlong;
    //// Mercator projection with a Clarke 1866 ellipsoid and a 37.32° latitude of true scale and prints the projected cartesian values in meters     
    // if (!(pj_merc = pj_init_plus("+proj=merc +ellps=clrk66 +lat_ts=37.5942 +units=m")) )
@@ -1494,25 +1546,16 @@ void network::scale_and_translate()
     center[0] *= deg_to_rad;
     center[1] *= deg_to_rad;
    int p = pj_transform(pj_latlong, pj_merc, 1, 1, &center[0], &center[1], NULL );
-#else   
-   center[0] = merc_x(center[0]);
-   center[1] = merc_y(center[1]);
-#endif
    
    std::cout<<std::setprecision(9)<<"Projected Center(m): ctrlon="<<center[0]<<", ctrlat="<<center[1]<<std::endl;
 
    for(osm::node_pair &np: nodes)
    {
-#ifdef HAVE_PROJ4
       np.second.xy[0] *= deg_to_rad;
       np.second.xy[1] *= deg_to_rad;
       double x = np.second.xy[0];
       double y = np.second.xy[1];
       int p = pj_transform(pj_latlong, pj_merc, 1, 1, &x, &y, NULL );
-#else
-      double x = merc_x(np.second.xy[0]);
-      double y = merc_y(np.second.xy[1]);
-#endif
       
       np.second.xy[0] = x;
       np.second.xy[1] = y;

@@ -41,11 +41,11 @@ message(FATAL_ERROR "Package LibXML++ not found")
 endif(NOT LibXML++_FOUND)
 include_directories(${LibXML++_INCLUDE_DIRS})
 
-# find_package(FLTK REQUIRED)
-# if(NOT FLTK_FOUND)
-# message(FATAL_ERROR "Package FLTK not found")
-# endif(NOT FLTK_FOUND)
-# include_directories(${FLTK_INCLUDE_DIR})
+find_package(FLTK REQUIRED)
+if(NOT FLTK_FOUND)
+message(FATAL_ERROR "Package FLTK not found")
+endif(NOT FLTK_FOUND)
+include_directories(${FLTK_INCLUDE_DIR})
 
 # Adds project main code as an include directory.
 include_directories(../Roadie/include/)
@@ -58,9 +58,9 @@ set(EXTERNAL_LIBS
   ${OPENGL_LIBRARIES}
   ${GLEW_LIBRARIES}
   ${LibXML++_LIBRARIES}
-  #${FLTK_LIBRARIES}
-  /usr/lib/x86_64-linux-gnu/libfltk.so
-  /usr/lib/x86_64-linux-gnu/libfltk_gl.so
+  ${FLTK_LIBRARIES}
+  #/usr/lib/x86_64-linux-gnu/libfltk.so
+  #/usr/lib/x86_64-linux-gnu/libfltk_gl.so
 )
 
 # Source for making executables.
