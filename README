@@ -1,0 +1,14 @@
+Road Network is a library consisted of efficient, automatic methods for extrapolating a road map from a GIS database to automatically create a geometrically correct and topologically consistent 3D model of large-scale road network to be readily used in a real-time traffic simulation, interactive visualization of virtual world, and autonomous vehicle navigation. The resulting model representation also provides important road features for traffic simulations, including smoothly connected ramps, highways, overpasses, legal merge zones, and intersections with arbitrary states and is independent of the simulation methodologies.
+
+Please send all bug reports to <geom@cs.unc.edu>.
+
+The authors may be contacted via:
+
+David Wilkie, Jason Sewall, Weizi Li, Ming C. Lin
+Dept. of Computer Science
+201 S. Columbia St.
+Frederick P. Brooks, Jr. Computer Science Bldg.
+Chapel Hill, N.C. 27599-3175
+United States of America
+
+<http://gamma.cs.unc.edu/RoadLib/>
