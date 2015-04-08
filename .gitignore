@@ -6,6 +6,7 @@ install_manifest.txt
 
 # general
 apidocs
+.dropbox.attr
 *.kdev4
 build
 *~
