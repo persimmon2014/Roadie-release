@@ -47,6 +47,27 @@ message(FATAL_ERROR "Package LibXML++ not found")
 endif(NOT LibXML++_FOUND)
 include_directories(${LibXML++_INCLUDE_DIRS})
 
+# Specify header files
+set(ROADIE_HEADERS
+  include/arc_road.hpp
+  include/functions.hpp
+  include/geometric.hpp
+  include/hilbert.hpp
+  include/hwm_draw.hpp
+  include/hwm_network.hpp
+  include/hwm_texture_gen.hpp
+  include/im_heightfield.hpp
+  include/libroad_common.hpp
+  include/osm_network.hpp
+  include/partition01.hpp
+  include/polyline_road.hpp
+  include/road_rep.hpp
+  include/rtree.hpp
+  include/rtree-impl.hpp
+  include/sumo_network.hpp
+  include/svg_helper.hpp
+  include/xml_util.hpp
+)
 
 # Specify source Files
 file(
@@ -109,8 +130,8 @@ endif(TRUE)
 target_link_libraries(Roadie ${EXTERNAL_LIBS})
 
 # Set install targets
-install_targets(/lib Roadie)
-install_files(/include/Roadie .hpp)
+install(FILES ${ROADIE_HEADERS} DESTINATION /usr/local/include/Roadie/)
+install(TARGETS Roadie DESTINATION /usr/local/lib)
 
 # Turn on the debugging information
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g -ggdb -fno-inline")

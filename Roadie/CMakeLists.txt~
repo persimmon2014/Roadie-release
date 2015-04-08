@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(Roadie)
 
-# Set path for finding additional modules
-#SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/../Modules/")
-
 # Turn on cairo option in the code.
 add_definitions(-DHAVE_CAIRO)
 
@@ -50,6 +47,27 @@ message(FATAL_ERROR "Package LibXML++ not found")
 endif(NOT LibXML++_FOUND)
 include_directories(${LibXML++_INCLUDE_DIRS})
 
+# Specify header files
+set(ROADIE_HEADERS
+  include/arc_road.hpp
+  include/functions.hpp
+  include/geometric.hpp
+  include/hilbert.hpp
+  include/hwm_draw.hpp
+  include/hwm_network.hpp
+  include/hwm_texture_gen.hpp
+  include/im_heightfield.hpp
+  include/libroad_common.hpp
+  include/osm_network.hpp
+  include/partition01.hpp
+  include/polyline_road.hpp
+  include/road_rep.hpp
+  include/rtree.hpp
+  include/rtree-impl.hpp
+  include/sumo_network.hpp
+  include/svg_helper.hpp
+  include/xml_util.hpp
+)
 
 # Specify source Files
 file(
@@ -87,16 +105,8 @@ endif(STATIC)
 # Main includes
 include_directories(./include/)
 
-# Other library includes
-#include_directories(/usr/include/glibmm-2.4/)
-#include_directories(/usr/lib/x86_64-linux-gnu/glibmm-2.4/include/)
-#include_directories(/usr/include/glib-2.0/)
-#include_directories(/usr/lib/x86_64-linux-gnu/glib-2.0/include/)
-
 # Set external library links
 set(EXTERNAL_LIBS
-  #/usr/lib/x86_64-linux-gnu/libglibmm-2.4.so
-  #/usr/lib/libproj.so
   ${GLIBMM2_LIBRARY}
   ${GLIB_LIBRARIES}
   ${OPENGL_LIBRARIES}
@@ -112,16 +122,16 @@ find_package(PROJ4 REQUIRED)
 if(NOT PROJ4_FOUND)
 message(FATAL_ERROR "Package PROJ4 not found")
 endif(NOT PROJ4_FOUND)
-include_directories(${LibXML++_INCLUDE_DIRS})
+include_directories(${PROJ4_INCLUDE_DIR})
+set(EXTERNAL_LIBS ${EXTERNAL_LIBS} ${PROJ4_LIBRARIES})
 endif(TRUE)
-
 
 # Link target to external libraries
 target_link_libraries(Roadie ${EXTERNAL_LIBS})
 
 # Set install targets
-install_targets(/lib Roadie)
-install_files(/include/Roadie .hpp)
+install(FILES ${ROADIE_HEADERS} DESTINATION /usr/local/include/Roadie/)
+install(TARGETS Roadie DESTINATION /usr/local/lib)
 
 # Turn on the debugging information
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g -ggdb -fno-inline")
