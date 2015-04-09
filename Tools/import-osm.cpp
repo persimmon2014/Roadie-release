@@ -106,10 +106,6 @@ int main(int argc, char *argv[])
 	exit(1);
     }
     
-     hwm::network_aux net_aux(net);
-     net_aux.network_obj("test-obj.obj", 0.01);
-     std::cerr << "Obj model exported successfully" << std::endl;
-    
     return 0;
 }
 

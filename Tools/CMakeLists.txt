@@ -67,12 +67,10 @@ set(EXTERNAL_LIBS
 add_executable(view-network view-network.cpp)
 add_executable(export-obj export-obj.cpp)
 add_executable(import-osm import-osm.cpp)
-add_executable(micro micro.cpp)
 
 target_link_libraries(view-network ${EXTERNAL_LIBS})
 target_link_libraries(export-obj ${EXTERNAL_LIBS})
 target_link_libraries(import-osm ${EXTERNAL_LIBS})
-target_link_libraries(micro ${EXTERNAL_LIBS})
 
 # Turn on the debugging information
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g -ggdb -fno-inline")
